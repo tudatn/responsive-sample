@@ -1,0 +1,70 @@
+body {
+  background-image: url("asset/background.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+  text-align: center;
+  position: sticky;
+  top: 0;
+    height: 80px;
+}
+
+nav a {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  margin-right: 20px;
+  width: 320px;
+  border-style: dotted dotted none none;
+  padding: 10px;
+  position: sticky;
+    position: -webkit-sticky;
+  top: 60px;
+}
+
+article {
+    margin-bottom: 60px;
+    
+  padding: 10px;
+  max-width: 700px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.sidebar header, article header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.author {
+  text-align: right;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("asset/background-768.jpeg");
+  }
+  article {
+    border: none;
+    box-shadow: none;
+  }
+  .toggle {
+    display: none;
+  }
+}
