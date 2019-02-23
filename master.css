@@ -1,70 +1,130 @@
 body {
-  background-image: url("asset/background.jpeg");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-size: 16px;
+    background-image: url("asset/background.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
 nav {
-  text-align: center;
-  position: sticky;
-  top: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
     height: 80px;
+    background-color: white;
+    opacity: 0.8;
 }
 
-nav a {
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
-  padding: 0 5px;
-}
+    nav h1 {
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    nav a {
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
+        padding: 0 5px;
+    }
 
 .main-content {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
 .sidebar {
-  margin-right: 20px;
-  width: 320px;
-  border-style: dotted dotted none none;
-  padding: 10px;
-  position: sticky;
+    margin-right: 20px;
+    width: 320px;
+    border-style: dotted dotted none none;
+    padding: 10px;
+    position: sticky;
     position: -webkit-sticky;
-  top: 60px;
+    top: 90px;
+}
+
+.sidebar .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 article {
     margin-bottom: 60px;
-    
-  padding: 10px;
-  max-width: 700px;
-  border: solid 1px black;
-  background-color: white;
+    padding: 10px;
+    max-width: 700px;
+    border: solid 1px black;
+    background-color: white;
 }
 
-.sidebar header, article header {
-  font-size: 20px;
-  font-weight: bold;
-}
+    .sidebar header, article header {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
 .author {
-  text-align: right;
-  padding-right: 10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* LOGIN FORM */
+.login {
+  max-width: 700px;
+  padding: 10px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.login input {
+    height: 40px;
+    min-width: 320px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.login button {
+  height: 40px;
+  min-width: 80px;
+  display: block;
+  margin-top: 10px;
+  border: none;
+}
+
+/* END LOGIN FORM */
+
+footer {
+  text-align: center;
+  height: 120px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+footer .contact {
+  margin: auto;
+}
+
+.contact i {
+  font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  body {
-    background-image: url("asset/background-768.jpeg");
-  }
-  article {
-    border: none;
-    box-shadow: none;
-  }
-  .toggle {
-    display: none;
-  }
+    body {
+        background-image: url("asset/background-768.jpeg");
+    }
+
+    article {
+        border: none;
+        box-shadow: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
 }
